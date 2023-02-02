@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Kaushan+Script&family=Poppins:wght@500&display=swap');
+@media (max-width: 800px) {
+    /* styles CSS pour les écrans de largeur inférieure à 800 pixels */
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+        -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+}
+section{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.my-button {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    padding: 15px 25px; 
+    border: none; 
+    border-radius: 40px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    box-shadow: 0 5px #f1f1f1; 
+    transition: all 0.3s ease; 
+}
+
+/* hover state */
+.my-button:hover {
+    background-color: #d6d6d6; 
+    box-shadow: 0 5px hsl(0, 0%, 100%); 
+    transform: translateY(-5px); 
+}
+
+/* pressed state */
+.my-button:active {
+    transform: translateY(5px); 
+    box-shadow: none; 
+}
+
+
+
+#container {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),#871515e6),url("https://images.unsplash.com/photo-1560134356-feb6bb393b31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2033&q=80");
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+
+.container-text {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-text h1 {
+    color: #fff;
+    font-size: 150px;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    display: inline-block;
+    animation: wave-animation 2s linear infinite;
+    text-align: center;
+}
+
+@keyframes wave-animation {
+    30% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    40% {
+        transform: translateY(0);
+    }
+}
+
+
+.container-text p {
+    color: #fff;
+    font-size: 50px;
+    margin: 20px 0 30px 0;
+}
+
+.sec {
+    
+    height: 100vh;
+    display:block;
+    
+}
+.sec:nth-child(odd)
+{
+    background-color: rgb(255, 255, 255);
+    padding-top: 5px;
+}
+
+.sec:nth-child(even)
+{
+    background-color: #871515e6;
+    color: #fff;
+    padding-top: 5px;
+}
+.sec h1 {
+    
+    font-size: 50px;
+    margin-top: 3%;
+    display: flex; /* pour utiliser les propriétés flexbox */
+    align-items: center; /* pour centrer verticalement le texte */
+    justify-content: center; /* pour centrer horizontalement le texte */
+
+}
+
+.sec img {
+    margin-top: 5%;
+    margin-right: 100px ;
+    border-radius: 20%; /* pour rendre les coins arrondis */
+    max-width: 40%; /* pour limiter la taille de l'image à la moitié de la section */
+    vertical-align: middle; /* pour centrer verticalement l'image */
+    float: right; /* pour aligner l'image à droite */
+}
+
+.sec .justify {
+    
+    border-spacing: 5px;
+    font-size: 23px ;
+    width: 35%;
+    margin-top: 10%;
+    vertical-align: middle; /* pour centrer verticalement l'image */
+    text-align: center; /* pour centrer horizontalement le texte */
+    align-items: center;
+    margin-left: 110px; /* pour créer un espace entre l'image et le texte */
+    float: left; /* pour faire flotter le texte à gauche de l'image */
+}
+
+/* fleche vers le haut */
+.btn {
+    height: 50px;
+    width: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+.icone {
+    width: 50px;
+}
+
+#container2 {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),#871515db),url("https://images.unsplash.com/photo-1511988751684-e0f483dac631?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+}  
+
+.container-text2 {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-text2 h1 {
+    color: #fff;
+    font-size: 150px;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+    position: relative;
+    display: inline-block;
+    animation: wave-animation 2s linear infinite;
+    text-align: center;
+}
+
+
+/* Création du formulaire */
+form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+form label {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 8px solid #871515e6;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    border-bottom: 8px solid #871515e6;
+    outline: none;
+}
+
+form button[type="submit"] {
+    background-color: #871515e6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Fenetre modale */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* style pour le contenu de la fenêtre modale */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+/* style pour le bouton de fermeture de la fenêtre modale */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#legal-button {
+    background-color: #871515e6; 
+    color: white; 
+    padding: 12px 20px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-bottom: 10px; 
+    width: 200px; 
+}
